@@ -7,7 +7,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import errors.ErrorHandler;
-import two_phase_commit.ConnectionManager;
 
 public class QueryParser {
     private static final String SELECT_REGEX = "(?i)^\\s*SELECT\\s+.+\\s+FROM\\s+.+(\\s+WHERE\\s+.+)?$";

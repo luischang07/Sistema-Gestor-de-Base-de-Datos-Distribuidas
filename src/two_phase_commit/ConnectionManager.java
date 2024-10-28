@@ -58,7 +58,8 @@ public class ConnectionManager {
         }
 
         if (conexiones.isEmpty()) {
-            System.err.println("No se encontraron fragmentos para las zonas seleccionadas");
+            ErrorHandler.showMessage("No se encontraron fragmentos para las zonas seleccionadas", "Error de fragmento",
+                    ErrorHandler.ERROR_MESSAGE);
             return false;
         }
         return true;
